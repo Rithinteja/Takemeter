@@ -1,0 +1,102 @@
+{
+  "finetuned_accuracy": 0.8485,
+  "finetuned_report": {
+    "analysis": {
+      "precision": 0.8461538461538461,
+      "recall": 1.0,
+      "f1-score": 0.9166666666666666,
+      "support": 11.0
+    },
+    "hot_take": {
+      "precision": 0.8,
+      "recall": 0.7272727272727273,
+      "f1-score": 0.7619047619047619,
+      "support": 11.0
+    },
+    "reaction": {
+      "precision": 0.9,
+      "recall": 0.8181818181818182,
+      "f1-score": 0.8571428571428571,
+      "support": 11.0
+    },
+    "accuracy": 0.8484848484848485,
+    "macro avg": {
+      "precision": 0.8487179487179487,
+      "recall": 0.8484848484848485,
+      "f1-score": 0.8452380952380952,
+      "support": 33.0
+    },
+    "weighted avg": {
+      "precision": 0.8487179487179488,
+      "recall": 0.8484848484848485,
+      "f1-score": 0.8452380952380951,
+      "support": 33.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      11,
+      0,
+      0
+    ],
+    [
+      2,
+      8,
+      1
+    ],
+    [
+      0,
+      2,
+      9
+    ]
+  ],
+  "label_names": [
+    "analysis",
+    "hot_take",
+    "reaction"
+  ],
+  "wrong_predictions": [
+    {
+      "text": "The Clippers are the biggest joke in NBA history. Still no conference finals.",
+      "true_label": "hot_take",
+      "predicted_label": "analysis",
+      "confidence": 0.3886508345603943
+    },
+    {
+      "text": "The vibes are immaculate after that W.",
+      "true_label": "reaction",
+      "predicted_label": "hot_take",
+      "confidence": 0.381048321723938
+    },
+    {
+      "text": "The Knicks are the most overrated team in the East.",
+      "true_label": "hot_take",
+      "predicted_label": "analysis",
+      "confidence": 0.4091204106807709
+    },
+    {
+      "text": "The arena erupted. Best moment of the season.",
+      "true_label": "reaction",
+      "predicted_label": "hot_take",
+      "confidence": 0.3823641240596771
+    },
+    {
+      "text": "The Jazz should have kept Mitchell. Trading stars never works.",
+      "true_label": "hot_take",
+      "predicted_label": "reaction",
+      "confidence": 0.3857009708881378
+    }
+  ],
+  "test_set_size": 33,
+  "label_map": {
+    "analysis": 0,
+    "hot_take": 1,
+    "reaction": 2
+  },
+  "model": "distilbert-base-uncased",
+  "hyperparameters": {
+    "epochs": 3,
+    "learning_rate": 2e-05,
+    "batch_size": 16
+  }
+}
