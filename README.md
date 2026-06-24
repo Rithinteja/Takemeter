@@ -222,13 +222,3 @@ Week_4/
 └── confusion_matrix.png
 ```
 
----
-
-## Demo Video Checklist
-
-Record 3–5 minutes showing:
-1. `python demo.py` — 3–5 posts with label and confidence
-2. One correct prediction with explanation (e.g., stat-heavy post → analysis)
-3. One incorrect or borderline prediction with analysis
-4. Brief walkthrough of evaluation metrics in README or `evaluation_results.json`
-5. Optional: `python app.py` web interface
